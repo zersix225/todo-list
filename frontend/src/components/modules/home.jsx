@@ -14,7 +14,7 @@ const Home = () => {
   });
 
   const [error, setError] = useState("");
-  const URL = "http://localhost:8000";
+  const URL = "https://todo-list-jy1p.onrender.com";
 
   const fetchTodos = async () => {
     try {
