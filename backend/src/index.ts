@@ -12,7 +12,7 @@ app.use(logger());
 
 app.use(
 	cors({
-		origin: ['http://localhost:5173'], // Your frontend application
+		origin: ['https://todo-lid.netlify.app'], // Your frontend application
 	})
 );
 
@@ -28,6 +28,6 @@ serve(
     port: 8000,
   },
   (info) => {
-    console.log(`Server is running on http://localhost:${info.port}`);
+    console.log(`Server is running on {info.port}http://localhost:$`);
   }
 );
