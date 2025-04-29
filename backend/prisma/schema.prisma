@@ -3,7 +3,6 @@
 
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
   output   = "../src/generated/prisma"
@@ -11,12 +10,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./data.db"
+  provider = "postgresql"
+  url      = env("DATA_BASE_URL")
 }
 
 model Todo {
-  id      Int     @id @default(autoincrement())
+  id      Int     @id @default(autoincrement()) 
   name    String
   success Boolean @default(false)
 }
