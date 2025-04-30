@@ -17,6 +17,6 @@
   },
   "exclude": [
     "node_modules",
-    "dist"  // ป้องกันไม่ให้คอมไพล์ไฟล์ใน dist
+    "dist"
   ]
 }
