@@ -13,7 +13,10 @@
     "outDir": "./dist",
     "declaration": true,
     "emitDeclarationOnly": true,
-    "allowImportingTsExtensions":true,
+    "allowImportingTsExtensions": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "dist"  // ป้องกันไม่ให้คอมไพล์ไฟล์ใน dist
+  ]
 }
