@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "npm run build && node dist/index.d.ts"
+    "start": "npm run build && node dist/index.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.1",
