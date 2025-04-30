@@ -28,6 +28,6 @@ serve(
     port: 8000,
   },
   (info) => {
-    console.log(`Server is running on {info.port}http://localhost:$`);
+    console.log(`Server is running on http://localhost:${info.port}`);
   }
 );
